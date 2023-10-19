@@ -1,0 +1,51 @@
+<h1>Hello Raniya</h1>
+<h2>This is default app component</h2>
+<input type="text" [placeholder]="name"/><br><br>
+<img src="./../assets/image/HD-wallpaper-nature.jpg" [width]="100">
+
+<table>
+    <tr>  
+        <th [attr.colspan]="columnSpan">  
+            <h4>Employee Information</h4>  
+        </th>  
+    </tr>    
+<tr>  
+    <td>Employee ID:</td>  
+    <td>{{id}}</td>  
+</tr>  
+<tr>  
+    <td>Employee Name:</td>  
+    <td>{{fname}}</td>  
+</tr>  
+<tr>  
+    <td>Gender:</td>  
+    <td>{{gender}}</td>  
+</tr>  
+<tr>  
+    <td>Designation:</td>  
+    <td>{{designation}}</td>  
+</tr>  
+<tr>  
+    <td>Location:</td>  
+    <td>{{location}}</td>  
+</tr>    
+<tr>  
+    <td>Profile Image:</td>  
+    <td><img [attr.Height]="imageHeight" [attr.Width]="imageWidth" [style.border-radius.px]="50" [attr.src]="imagePath"></td>  
+</tr>   
+</table> 
+<p>welcome{{text}}</p>
+<input (keyup)="keyUp()"><br>
+<input (blur)="blur()" placeholder="Enter your name"><br>
+<input (focus)="focus()" placeholder="Enter your email"><br>
+<button (click)="Onclick()">Submit</button><br> 
+<button (mouseover)="hover()">Hover me</button><br>
+<button (mouseout)="out()">Mouse out</button><br>
+<input type="text" [(ngModel)]="name">
+<span>{{name}}</span>
+<p [class.para]>hello world</p>
+<button (click)="click()">reset</button>
+
+<app-component1></app-component1>
+<app-component2></app-component2>
+<app-component1></app-component1>
